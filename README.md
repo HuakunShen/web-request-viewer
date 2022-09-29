@@ -1,42 +1,12 @@
-# Nuxt 3 Minimal Starter
+# Web Request Viewer
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Display information of your web request. For debugging and development purpose.
 
-## Setup
+For example, you can change your `user-agent` in header and check if it indeed works using this API.
 
-Make sure to install the dependencies:
+# Available API Routes
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+- `/online`
+- `/headers`
+- `/ip`
+- `user-agent`
