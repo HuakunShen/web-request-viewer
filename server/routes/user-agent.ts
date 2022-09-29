@@ -1,1 +1,1 @@
-export default defineEventHandler((event) => event.req.headers["user-agent"]);
+export default defineEventHandler((event) => getHeader(event, "user-agent"));

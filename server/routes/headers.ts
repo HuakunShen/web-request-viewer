@@ -1,1 +1,1 @@
-export default defineEventHandler((event) => event.req.headers);
+export default defineEventHandler((event) => getHeaders(event));
