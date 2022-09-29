@@ -1,4 +1,4 @@
 export default defineEventHandler((event) => {
-  console.log(Date.now());
+  setResponseHeader(event, "Access-Control-Allow-Origin", "*");
   return Date.now();
 });

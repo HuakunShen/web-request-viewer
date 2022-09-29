@@ -1,1 +1,4 @@
-export default defineEventHandler((event) => getHeader(event, "user-agent"));
+export default defineEventHandler((event) => {
+  setResponseHeader(event, "Access-Control-Allow-Origin", "*");
+  return getHeader(event, "user-agent");
+});

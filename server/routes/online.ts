@@ -1,1 +1,4 @@
-export default defineEventHandler((event) => ({ online: true }));
+export default defineEventHandler((event) => {
+  setResponseHeader(event, "Access-Control-Allow-Origin", "*");
+  return { online: true };
+});
